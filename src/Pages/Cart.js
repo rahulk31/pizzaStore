@@ -43,7 +43,7 @@ const Cart = () => {
     }
 
     const decrement = (productId) => {
-        const existingQty = cart.items[productId];
+        const existingQty = cart.items[productId]; 
         if(existingQty === 1) return;
         const _cart ={ ...cart};
         _cart.items[productId] = existingQty - 1;
